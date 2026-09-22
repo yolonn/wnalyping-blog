@@ -1,95 +1,630 @@
-<!doctype html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#10100f" />
-    <meta name="description" content="WNA LYPING 的个人博客：写作、AI、项目与持续形成中的想法。" />
-    <meta property="og:title" content="WNA LYPING — Personal Journal" />
-    <meta property="og:description" content="记录正在成形的想法，把事情做出来。" />
-    <meta property="og:type" content="website" />
-    <title>WNA LYPING — Personal Journal</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="page-loader" aria-hidden="true"><span></span></div>
-    <header class="navbar" id="navbar">
-      <div class="nav-inner">
-        <a class="brand" href="#home" aria-label="WNA LYPING 首页">WNA<span>LYPING</span></a>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="打开导航"><span></span><span></span><span></span></button>
-        <nav class="main-menu" id="main-menu" aria-label="主要导航">
-          <a class="nav-link active" href="#home">首页</a><a class="nav-link" href="#about">关于</a><a class="nav-link" href="#focus">方向</a><a class="nav-link" href="#works">项目</a><a class="nav-link" href="#journal">文章</a><a class="nav-link" href="#contact">联系</a>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <section class="hero" id="home" aria-labelledby="hero-title">
-        <div class="hero-image" aria-hidden="true"></div><div class="hero-shade" aria-hidden="true"></div>
-        <div class="hero-content reveal visible"><p class="hero-kicker"><span></span> PERSONAL JOURNAL · 2026</p><h1 id="hero-title">记录想法，<br />也记录<span>行动。</span></h1><p class="hero-copy">技术、AI、设计与日常生活。<br />这里是我在互联网里认真经营的一间工作室。</p><div class="hero-actions"><a class="button button-gold" href="#journal">阅读文章</a><a class="button button-ghost" href="#about">认识我</a></div></div>
-        <div class="hero-foot" aria-hidden="true"><span>SHANGHAI · CHINA</span><span class="scroll-cue">SCROLL <i>↓</i></span><span>CURIOUS BY DEFAULT</span></div>
-      </section>
+<!DOCTYPE html>
+<html lang="en">
 
-      <section class="section section-light" id="about">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeLens Studio - Professional Photography</title>
+    <link rel="icon" href="assets/images/photo.png">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="spinner"></div>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-          <header class="section-heading reveal"><p class="eyebrow">01 · ABOUT ME</p><h2>镜头之后，是一个<br />持续学习的人。</h2><p>About the person behind the screen</p></header>
-          <div class="about-grid">
-            <div class="about-portrait reveal"><div class="portrait-frame"><span class="portrait-monogram">W</span><span class="portrait-line line-one"></span><span class="portrait-line line-two"></span><p>MAKE<br />MEANING<br />VISIBLE.</p></div><span class="portrait-caption">WNA LYPING / SELF PORTRAIT IN PROGRESS</span></div>
-            <div class="about-copy reveal"><p class="lead">你好，我是 WNA LYPING。</p><p>我喜欢把模糊的兴趣变成具体的东西：一篇文章、一段代码、一个页面，或者一次还没有答案的实验。</p><p>这个网站不是一张静态名片，而是一个持续更新的个人空间。这里收纳我对技术、AI、设计和生活的观察，也记录每一次把想法做出来的过程。</p><blockquote>“不急着成为谁，先诚实地留下自己的路径。”</blockquote><div class="stats"><div><strong>04</strong><span>长期主题</span></div><div><strong>∞</strong><span>持续好奇</span></div><div><strong>01</strong><span>自己的角落</span></div></div></div>
-          </div>
+            <a class="navbar-brand" href="#home">LUXELENS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="drone-service.html">Drone Service</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
-      </section>
-
-      <section class="section" id="focus">
-        <div class="container"><header class="section-heading center reveal"><p class="eyebrow">02 · WHAT I DO</p><h2>我正在关注的方向</h2><p>Ideas, experiments and useful things</p></header>
-          <div class="service-grid">
-            <article class="service-card reveal"><div class="service-visual visual-writing"><span>01</span><b>WRITE</b></div><div class="service-body"><h3>写作与思考</h3><p>把复杂问题写清楚，让零散经验变成可以复用的认识。</p><button class="text-link" type="button" data-scroll="#journal">查看文章 <span>→</span></button></div></article>
-            <article class="service-card reveal"><div class="service-visual visual-ai"><span>02</span><b>BUILD</b></div><div class="service-body"><h3>AI 与工作流</h3><p>让 AI 真正参与研究、创作和工程实践，而不是只做快捷按钮。</p><button class="text-link" type="button" data-scroll="#works">查看实验 <span>→</span></button></div></article>
-            <article class="service-card reveal"><div class="service-visual visual-web"><span>03</span><b>OWN</b></div><div class="service-body"><h3>独立互联网</h3><p>设计并维护属于自己的网络空间，慢慢建立可持续的数字身份。</p><button class="text-link" type="button" data-scroll="#contact">一起交流 <span>→</span></button></div></article>
-          </div>
+    </nav>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-slide active"></div>
+        <div class="hero-slide"></div>
+        <div class="hero-slide"></div>
+        <div class="hero-content">
+            <div class="container">
+                <h1 data-aos="fade-up" data-aos-delay="200">Capturing Moments, Creating Memories</h1>
+                <p data-aos="fade-up" data-aos-delay="400">Professional Photography That Tells Your Story</p>
+                <button class="btn btn-primary-custom" onclick="location.href='#contact'" data-aos="fade-up"
+                    data-aos-delay="600">Book a Shoot</button>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <section class="section section-light" id="works">
-        <div class="container"><header class="section-heading center reveal"><p class="eyebrow">03 · SELECTED WORK</p><h2>项目与实验</h2><p>A glimpse of work in progress</p></header>
-          <div class="filter-buttons reveal" role="group" aria-label="项目筛选"><button class="filter-btn active" type="button" data-filter="all">全部</button><button class="filter-btn" type="button" data-filter="web">网站</button><button class="filter-btn" type="button" data-filter="ai">AI</button><button class="filter-btn" type="button" data-filter="notes">笔记</button></div>
-          <div class="gallery-grid">
-            <button class="gallery-item gallery-one reveal" type="button" data-category="web" data-work="work-website"><span>PERSONAL WEB</span><strong>WNA<br />LYPING</strong><i>↗</i></button>
-            <button class="gallery-item gallery-two reveal" type="button" data-category="ai" data-work="work-ai"><span>AI SYSTEM</span><strong>WORK<br />FLOW</strong><i>↗</i></button>
-            <button class="gallery-item gallery-three reveal" type="button" data-category="notes" data-work="work-notes"><span>FIELD NOTES</span><strong>THINK<br />CLEAR</strong><i>↗</i></button>
-            <button class="gallery-item gallery-four reveal" type="button" data-category="web" data-work="work-design"><span>WEB DESIGN</span><strong>FORM &<br />VOICE</strong><i>↗</i></button>
-            <button class="gallery-item gallery-five reveal" type="button" data-category="ai" data-work="work-lab"><span>EXPERIMENT</span><strong>TRY / FAIL<br />/ REPEAT</strong><i>↗</i></button>
-            <button class="gallery-item gallery-six reveal" type="button" data-category="notes" data-work="work-life"><span>DAILY LOG</span><strong>SLOW<br />DOWN</strong><i>↗</i></button>
-          </div>
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-aos="fade-up">About Me</h2>
+                <p data-aos="fade-up" data-aos-delay="200">The Artist Behind The Lens</p>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <div class="about-img" data-aos="fade-right">
+                        <img src="assets/images/female-traveler-using-professional-camera-new-memories_23-2149084344.jpg"
+                            alt="Photographer">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4" data-aos="fade-left">Hi, I'm Sarah Mitchell</h3>
+                    <p class="mb-4" data-aos="fade-left" data-aos-delay="100">With over 12 years of experience in
+                        professional photography, I specialize in capturing the essence of life's most precious moments.
+                        My passion lies in creating timeless images that tell compelling stories and evoke genuine
+                        emotions.</p>
+                    <p class="mb-4" data-aos="fade-left" data-aos-delay="200">From intimate weddings to high-fashion
+                        editorials, I bring a unique blend of artistic vision and technical expertise to every project.
+                        My work has been featured in numerous publications and exhibitions worldwide.</p>
+                    <div class="row mt-5">
+                        <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="100">
+                            <div class="stat-box">
+                                <h3>12+</h3>
+                                <p>Years Experience</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="200">
+                            <div class="stat-box">
+                                <h3>500+</h3>
+                                <p>Happy Clients</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="300">
+                            <div class="stat-box">
+                                <h3>15+</h3>
+                                <p>Awards Won</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <section class="section" id="journal">
-        <div class="container"><header class="section-heading center reveal"><p class="eyebrow">04 · JOURNAL</p><h2>最近写了什么</h2><p>Notes on technology, making and life</p></header>
-          <div class="blog-grid">
-            <article class="blog-card reveal"><div class="blog-cover cover-space"><span>OWN YOUR SPACE.</span></div><div class="blog-body"><span class="blog-tag">THINKING</span><p class="blog-meta">2026.09.21 · 8 MIN</p><h3>为什么每个人都应该拥有一个自己的互联网角落</h3><p>网站不只是名片，更像一个长期容器，让想法与作品慢慢长出自己的形状。</p><button class="text-link" type="button" data-article="article-space">阅读全文 <span>→</span></button></div></article>
-            <article class="blog-card reveal"><div class="blog-cover cover-ai"><span>AI / DAILY</span></div><div class="blog-body"><span class="blog-tag">AI</span><p class="blog-meta">2026.09.13 · 12 MIN</p><h3>我如何把 AI 放进每天的工作流</h3><p>从收集问题到完成交付，让工具真正参与思考，而不是只替代点击。</p><button class="text-link" type="button" data-article="article-ai">阅读全文 <span>→</span></button></div></article>
-            <article class="blog-card reveal"><div class="blog-cover cover-design"><span>LESS / BETTER</span></div><div class="blog-body"><span class="blog-tag">DESIGN</span><p class="blog-meta">2026.09.02 · 6 MIN</p><h3>好的个人网站，应该留下什么</h3><p>少一点包装，多一点真实痕迹；少一点追赶，多一点自己的节奏。</p><button class="text-link" type="button" data-article="article-design">阅读全文 <span>→</span></button></div></article>
-          </div>
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-aos="fade-up">Our Services</h2>
+                <p data-aos="fade-up" data-aos-delay="200">Professional Photography for Every Occasion</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card service-card">
+                        <img src="assets/images/beautiful-woman-long-red-dress-walks-around-city-with-her-husband_1157-13373.jpg"
+                            alt="Wedding">
+                        <div class="card-body">
+                            <h4>Wedding Photography</h4>
+                            <p>Capture your special day with stunning images that preserve the magic, emotion, and
+                                beauty of your wedding celebration forever.</p>
+                            <div class="service-footer">
+                                <span class="price-tag">From $2,500</span>
+                                <a class="btn btn-primary-custom servicemore" href="wedding-photography.html">View
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card service-card">
+                        <img src="assets/images/smiley-woman-holding-camera-leaf_23-2148647672.jpg"
+                            alt="Portrait">
+                        <div class="card-body">
+                            <h4>Portrait Photography</h4>
+                            <p>Professional portraits that showcase your personality, style, and confidence. Perfect for
+                                personal or corporate use.</p>
+                            <div class="service-footer">
+                                <span class="price-tag">From $2,500</span>
+                                <a class="btn btn-primary-custom servicemore" href="portrait-photography.html">View
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card service-card">
+                        <img src="assets/images/medium-shot-model-posing-with-chair-black-white_23-2149392872.jpg"
+                            alt="Fashion">
+                        <div class="card-body">
+                            <h4>Fashion Photography</h4>
+                            <p>Editorial-quality fashion shoots for designers, brands, and models. Creating stunning
+                                visual narratives for your collections.</p>
+
+                            <div class="service-footer">
+                                <span class="price-tag">From $2,500</span>
+                                <a class="btn btn-primary-custom servicemore" href="fashion-photography.html">View
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card service-card">
+                        <img src="assets/images/paparazzi-red-carpet_23-2151941575.jpg"
+                            alt="Events">
+                        <div class="card-body">
+                            <h4>Event Photography</h4>
+                            <p>Comprehensive coverage of corporate events, parties, and celebrations. Documenting every
+                                important moment professionally.</p>
+                            <div class="service-footer">
+                                <span class="price-tag">From $2,500</span>
+                                <a class="btn btn-primary-custom servicemore" href="event-photogrphy.html">View
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card service-card">
+                        <img src="assets/images/product-photographer-with-camera-studio_23-2148970261.jpg"
+                            alt="Product">
+                        <div class="card-body">
+                            <h4>Product Photography</h4>
+                            <p>High-quality product images that showcase your merchandise in the best light. Perfect for
+                                e-commerce and marketing.</p>
+
+                            <div class="service-footer">
+                                <span class="price-tag">From $2,500</span>
+                                <a class="btn btn-primary-custom servicemore" href="product-photography.html">View
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card service-card">
+                        <img src="assets/images/side-view-woman-working-photography-studio_23-2150254633.jpg"
+                            alt="Commercial">
+                        <div class="card-body">
+                            <h4>Commercial Photography</h4>
+                            <p>Professional photography for advertising campaigns, brand promotions, and business
+                                marketing materials.</p>
+                            <div class="service-footer">
+                                <span class="price-tag">From $2,500</span>
+                                <a class="btn btn-primary-custom servicemore" href="commercial-photography.html">View
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <section class="quote-section"><div class="container reveal"><span class="quote-mark">“</span><blockquote>真正值得被记录的，<br />不是一个完美的结果，<br />而是思想逐渐清晰的过程。</blockquote><p>— WNA LYPING · FIELD NOTE 01</p></div></section>
-
-      <section class="section section-light" id="contact">
-        <div class="container"><header class="section-heading center reveal"><p class="eyebrow">05 · GET IN TOUCH</p><h2>聊聊正在发生的事</h2><p>Good ideas often begin with a conversation</p></header>
-          <div class="contact-grid">
-            <form class="contact-form reveal" id="contact-form"><div class="field-row"><label>你的名字<input name="name" type="text" placeholder="怎么称呼你" required /></label><label>你的邮箱<input name="email" type="email" placeholder="name@example.com" required /></label></div><label>想聊什么<input name="subject" type="text" placeholder="项目、文章，或者一个问题" /></label><label>留言<textarea name="message" rows="6" placeholder="写下你的想法……" required></textarea></label><button class="button button-gold form-submit" type="submit">发送邮件</button><p class="form-note">提交后会打开你的默认邮件客户端，本站不会储存表单内容。</p></form>
-            <aside class="contact-card reveal"><p class="eyebrow">CONTACT</p><h3>保持联系</h3><p>欢迎讨论技术、AI、个人网站，也欢迎分享你正在认真做的事情。</p><dl><div><dt>EMAIL</dt><dd><a href="mailto:hello@wnalyping.cn">hello@wnalyping.cn</a></dd></div><div><dt>GITHUB</dt><dd><a href="https://github.com/yolonn" target="_blank" rel="noreferrer">@yolonn ↗</a></dd></div><div><dt>STATUS</dt><dd><span class="status-dot"></span> OPEN TO IDEAS</dd></div></dl><div class="contact-monogram" aria-hidden="true">W/</div></aside>
-          </div>
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-aos="fade-up">Portfolio</h2>
+                <p data-aos="fade-up" data-aos-delay="200">A Glimpse of Our Best Work</p>
+            </div>
+            <div class="filter-buttons" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="wedding">Wedding</button>
+                <button class="filter-btn" data-filter="portrait">Portrait</button>
+                <button class="filter-btn" data-filter="fashion">Fashion</button>
+                <button class="filter-btn" data-filter="nature">Nature</button>
+            </div>
+            <div class="row" id="gallery">
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="wedding" data-aos="zoom-in">
+                    <img src="assets/images/elegant-wedding-ceremony-with-couple-love_23-2151976652.jpg"
+                        alt="Wedding">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="portrait" data-aos="zoom-in"
+                    data-aos-delay="100">
+                    <img src="assets/images/photo-1531746020798-e6953c6e8e04.jpg" alt="Portrait">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="fashion" data-aos="zoom-in"
+                    data-aos-delay="200">
+                    <img src="assets/images/positive-young-female-isolated-grey-background_613910-8500.jpg"
+                        alt="Fashion">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="nature" data-aos="zoom-in"
+                    data-aos-delay="300">
+                    <img src="assets/images/photo-1506905925346-21bda4d32df4.jpg" alt="Nature">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="wedding" data-aos="zoom-in"
+                    data-aos-delay="400">
+                    <img src="assets/images/photo-1519741497674-611481863552.jpg" alt="Wedding">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="portrait" data-aos="zoom-in"
+                    data-aos-delay="500">
+                    <img src="assets/images/fashion-girl-standing-studio_1157-20870.jpg"
+                        alt="Portrait">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="fashion" data-aos="zoom-in"
+                    data-aos-delay="600">
+                    <img src="assets/images/beautiful-blonde-woman-blue-light_23-2149478942.jpg"
+                        alt="Fashion">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="nature" data-aos="zoom-in"
+                    data-aos-delay="700">
+                    <img src="assets/images/portrait-young-female-photographer-taking-picture-nature-with-camera_23-2148222009.jpg"
+                        alt="Nature">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="wedding" data-aos="zoom-in"
+                    data-aos-delay="800">
+                    <img src="assets/images/hands-indian-bride-groom-intertwined-together-making-authentic-wedding-ritual_8353-10047.jpg"
+                        alt="Wedding">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
-    </main>
+    </section>
 
-    <footer class="footer"><div class="container footer-grid"><div><a class="footer-brand" href="#home">WNA<span>LYPING</span></a><p>记录正在成形的想法，把事情做出来。</p></div><div><h4>导航</h4><a href="#about">关于</a><a href="#works">项目</a><a href="#journal">文章</a></div><div><h4>关注</h4><a href="https://github.com/yolonn" target="_blank" rel="noreferrer">GitHub ↗</a><a href="mailto:hello@wnalyping.cn">Email ↗</a></div><div class="footer-note"><span>PERSONAL JOURNAL</span><strong>KEEP<br />MAKING.</strong></div></div><div class="container copyright"><span>© <span id="year"></span> WNA LYPING</span><span>DESIGNED WITH CURIOSITY</span></div></footer>
-    <button class="back-to-top" id="back-to-top" type="button" aria-label="返回顶部">↑</button>
-    <dialog class="modal" id="content-modal"><button class="modal-close" type="button" aria-label="关闭">×</button><div class="modal-kicker" id="modal-kicker"></div><h2 id="modal-title"></h2><div class="modal-body" id="modal-body"></div></dialog>
-    <div class="toast" id="toast" role="status" aria-live="polite"></div>
-    <script src="script.js"></script>
-  </body>
+    <!-- Blog Section -->
+    <section id="blog">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-aos="fade-up">Photography Blog</h2>
+                <p data-aos="fade-up" data-aos-delay="200">Tips, Tricks & Latest Trends</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card blog-card">
+                        <img src="assets/images/photo-1554048612-b6a482bc67e5.jpeg" alt="Blog Post">
+                        <div class="card-body">
+                            <span class="blog-category">Tips & Tricks</span>
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar"></i> Mar 15, 2024</span>
+                                <span><i class="far fa-clock"></i> 5 min read</span>
+                            </div>
+                            <h4>10 Essential Camera Settings for Portrait Photography</h4>
+                            <p>Master your camera settings to capture stunning portraits that stand out. Learn the key
+                                settings that professional photographers use.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card blog-card">
+                        <img src="assets/images/photo-1542038784456-1ea8e935640e.jpeg" alt="Blog Post">
+                        <div class="card-body">
+                            <span class="blog-category">Wedding</span>
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar"></i> Feb 28, 2024</span>
+                                <span><i class="far fa-clock"></i> 7 min read</span>
+                            </div>
+                            <h4>How to Prepare for Your Wedding Photography Session</h4>
+                            <p>A comprehensive guide to ensure your wedding photos are perfect. From timelines to outfit
+                                choices, we cover it all.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card blog-card">
+                        <img src="assets/images/photo-1516035069371-29a1b244cc32.jpg" alt="Blog Post">
+                        <div class="card-body">
+                            <span class="blog-category">Editing</span>
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar"></i> Feb 10, 2024</span>
+                                <span><i class="far fa-clock"></i> 8 min read</span>
+                            </div>
+                            <h4>Lightroom Editing Techniques for Professional Results</h4>
+                            <p>Discover powerful Lightroom editing techniques that will transform your photos from good
+                                to extraordinary.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="blogmore">
+            <a class="btn btn-primary-custom aos-init aos-animate" href="blog.html">View
+                More</a>
+        </div>
+
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img src="assets/images/138.jpg" alt="Lightbox Image">
+    </div>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-aos="fade-up">Testimonials</h2>
+                <p data-aos="fade-up" data-aos-delay="200">What Our Clients Say</p>
+            </div>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="testimonial-card">
+                                    <img src="assets/images/photo-1494790108377-be9c29b29330.jpeg"
+                                        alt="Client">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="mb-3">"Sarah captured our wedding day perfectly! Every photo tells a story
+                                        and brings back beautiful memories. Her professionalism and artistic eye are
+                                        unmatched. We couldn't have asked for a better photographer!"</p>
+                                    <h5>Emily Johnson</h5>
+                                    <small>Wedding Client</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="testimonial-card">
+                                    <img src="assets/images/photo-1507003211169-0a1dd7228f2d.jpeg"
+                                        alt="Client">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="mb-3">"Outstanding corporate headshots! Sarah made the entire team feel
+                                        comfortable and confident. The results exceeded our expectations and really
+                                        elevated our company's professional image."</p>
+                                    <h5>Michael Chen</h5>
+                                    <small>Corporate Client</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="testimonial-card">
+                                    <img src="assets/images/photo-1544005313-94ddf0286df2.jpeg"
+                                        alt="Client">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="mb-3">"Incredible fashion portfolio shoot! Sarah's creative vision and
+                                        attention to detail helped bring my collection to life. Her work is truly
+                                        gallery-worthy and I'll definitely be working with her again."</p>
+                                    <h5>Alexandra Martinez</h5>
+                                    <small>Fashion Designer</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-aos="fade-up">Get In Touch</h2>
+                <p data-aos="fade-up" data-aos-delay="200">Let's Create Something Beautiful Together</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mb-4 mb-lg-0" data-aos="fade-right">
+                    <div class="contact-form">
+                        <h3 class="mb-4">Contact Us</h3>
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Subject">
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="6" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary-custom w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-left" data-aos-delay="200">
+                    <div class="contact-info">
+                        <h3 class="mb-4">Contact Information</h3>
+
+                        <div class="info-item">
+                            <div class="icon-box">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h5>Address</h5>
+                                <p>123 Studio Street, New York, NY 10001</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="icon-box">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h5>Phone</h5>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="icon-box">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h5>Email</h5>
+                                <p>hello@luxelens.com</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="icon-box">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h5>Working Hours</h5>
+                                <p>Mon–Fri: 9:00 AM – 6:00 PM<br>Sat: 10:00 AM – 4:00 PM</p>
+                            </div>
+                        </div>
+
+                        <div class="social-links mt-4">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="X (Twitter)">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M18.244 2H21.552L14.291 10.29L22.824 22H16.112L10.822 14.622L4.758 22H1.448L9.206 13.243L1 2H7.888L12.662 8.735L18.244 2ZM17.096 20H18.93L6.892 4H4.928L17.096 20Z" />
+                                </svg>
+                            </a>
+                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4" data-aos="fade-up">
+                    <h4 class="footer-logo mb-3">LUXELENS <span>STUDIO</span></h4>
+                    <p class="footer-text">
+                        Professional photography studio capturing life's most precious moments.
+                        Creating timeless memories through the lens.
+                    </p>
+                    <div class="social-links mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="X (Twitter)">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M18.244 2H21.552L14.291 10.29L22.824 22H16.112L10.822 14.622L4.758 22H1.448L9.206 13.243L1 2H7.888L12.662 8.735L18.244 2ZM17.096 20H18.93L6.892 4H4.928L17.096 20Z" />
+                            </svg>
+                        </a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <h5 class="footer-title">Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="wedding-photography.html">Wedding</a></li>
+                        <li><a href="portrait-photography.html">Portrait</a></li>
+                        <li><a href="fashion-photography.html">Fashion</a></li>
+                        <li><a href="event-photogrphy.html">Events</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <h5 class="footer-title">Newsletter</h5>
+                    <p class="footer-text">Get studio updates, offers & photography tips.</p>
+                    <div class="newsletter">
+                        <input type="email" id="subscribe-email" required="" placeholder="Enter your email">
+                        <button id="subscribe">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>© 2026 | <a target="_blank" href="https://www.mobanwang.com/" title="网站模板" style="color:#94a3b8;">网站模板</a></p>
+                <div class="copyright-links">
+                    <a href="terms-condition.html">Terms & Conditions</a>
+                    <span class="divider">|</span>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <span class="divider">|</span>
+                    <a href="FAQs.html">FAQs</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
 </html>

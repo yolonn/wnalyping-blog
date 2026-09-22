@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyVision - Professional Drone Photography & Videography</title>
+        <link rel="icon" href="assets/images/photo.png">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="spinner"></div>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">LUXELENS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="drone-service.html">Drone Service</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section id="home" class="hero drone-hero">
+        <div class="hero-slide drone-slide-1 active"></div>
+        <div class="hero-slide drone-slide-2"></div>
+        <div class="hero-slide drone-slide-3"></div>
+        <div class="hero-content">
+            <div class="container">
+                <h1 data-aos="fade-up" data-aos-delay="200">Aerial Perspectives That Soar Above</h1>
+                <p data-aos="fade-up" data-aos-delay="400">Professional Drone Photography & Cinematic Videography</p>
+                <button class="btn btn-primary-custom" onclick="location.href='#contact'" data-aos="fade-up"
+                    data-aos-delay="600">Book a Flight</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-aos="fade-up">SkyVision Drone Division</h2>
+                <p data-aos="fade-up" data-aos-delay="200">Elevating Photography to New Heights</p>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <div class="about-img" data-aos="fade-right">
+                        <img src="assets/images/man-flying-drone-mountains_23-2149155979.jpg"
+                            alt="Drone Pilot">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4" data-aos="fade-left">Certified Aerial Photography</h3>
+                    <p class="mb-4" data-aos="fade-left" data-aos-delay="100">Our FAA-certified drone pilots combine
+                        technical expertise with artistic vision to capture breathtaking aerial imagery. Using
+                        state-of-the-art drones equipped with 4K cameras and advanced stabilization systems.</p>
+                    <p class="mb-4" data-aos="fade-left" data-aos-delay="200">From real estate panoramas to cinematic
+                        event coverage, we provide unique perspectives that ground-based photography simply cannot
+                        achieve. Fully insured and compliant with all aviation regulations.</p>
+                    <div class="row mt-5">
+                        <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="100">
+                            <div class="stat-box">
+                                <h3>FAA</h3>
+                                <p>Part 107 Certified</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="200">
+                            <div class="stat-box">
+                                <h3>4K/6K</h3>
+                                <p>Cinematic Quality</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="300">
+                            <div class="stat-box">
+                                <h3>500+</h3>
+                                <p>Aerial Projects</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-aos="fade-up">Aerial Services</h2>
+                <p data-aos="fade-up" data-aos-delay="200">Specialized Drone Solutions</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card service-card">
+                        <img src="assets/images/aerial-view-luxury-house-swimming-pool_181624-4452.jpg"
+                            alt="Real Estate">
+                        <div class="card-body">
+                            <h4>Real Estate Aerial</h4>
+                            <p>Stunning aerial photography and video tours showcasing properties from unique
+                                perspectives that highlight land, features, and surroundings.</p>
+                            <span class="price-tag">From $450</span>
+                            <a class="btn btn-primary-custom aos-init aos-animate servicemore" href="">View Package</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card service-card">
+                        <img src="assets/images/aerial-view-beach-resort_181624-3523.jpg"
+                            alt="Construction">
+                        <div class="card-body">
+                            <h4>Construction Progress</h4>
+                            <p>Regular aerial documentation for construction sites, progress tracking, site planning,
+                                and marketing materials for developers.</p>
+                            <span class="price-tag">From $650</span>
+                            <a class="btn btn-primary-custom aos-init aos-animate servicemore" href="">View Package</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card service-card">
+                        <img src="assets/images/aerial-view-wedding-ceremony_181624-4676.jpg"
+                            alt="Events">
+                        <div class="card-body">
+                            <h4>Event Coverage</h4>
+                            <p>Cinematic aerial footage of weddings, festivals, sports events, and corporate gatherings
+                                for dynamic, memorable content.</p>
+                            <span class="price-tag">From $850</span>
+                            <a class="btn btn-primary-custom aos-init aos-animate servicemore" href="">View Package</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card service-card">
+                        <img src="assets/images/aerial-view-landscape-mountains_181624-4568.jpg"
+                            alt="Landscape">
+                        <div class="card-body">
+                            <h4>Landscape & Nature</h4>
+                            <p>Breathtaking aerial photography of natural landscapes, parks, coastlines, and wilderness
+                                areas for art or commercial use.</p>
+                            <span class="price-tag">From $550</span>
+                            <a class="btn btn-primary-custom aos-init aos-animate servicemore" href="">View Package</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card service-card">
+                        <img src="assets/images/aerial-view-industrial-zone_181624-4765.jpg"
+                            alt="Industrial">
+                        <div class="card-body">
+                            <h4>Industrial Inspection</h4>
+                            <p>Safe aerial inspection of rooftops, solar panels, cell towers, and infrastructure without
+                                risky climbing or equipment.</p>
+                            <span class="price-tag">From $750</span>
+                            <a class="btn btn-primary-custom aos-init aos-animate servicemore" href="">View Package</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card service-card">
+                        <img src="assets/images/aerial-view-cityscape_181624-4567.jpg"
+                            alt="Commercial">
+                        <div class="card-body">
+                            <h4>Commercial Videography</h4>
+                            <p>Professional aerial video production for commercials, brand campaigns, documentaries, and
+                                tourism promotions.</p>
+                            <span class="price-tag">From $1,200</span>
+                            <a class="btn btn-primary-custom aos-init aos-animate servicemore" href="">View Package</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-aos="fade-up">Aerial Portfolio</h2>
+                <p data-aos="fade-up" data-aos-delay="200">Sky-High Perspectives</p>
+            </div>
+            <div class="filter-buttons" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="realestate">Real Estate</button>
+                <button class="filter-btn" data-filter="construction">Construction</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+                <button class="filter-btn" data-filter="landscape">Landscape</button>
+            </div>
+            <div class="row" id="gallery">
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="realestate" data-aos="zoom-in">
+                    <img src="assets/images/2150799725.jpg" alt="Real Estate">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="construction" data-aos="zoom-in"
+                    data-aos-delay="100">
+                    <img src="assets/images/2891.jpg" alt="Construction">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="events" data-aos="zoom-in"
+                    data-aos-delay="200">
+                    <img src="assets/images/1250.jpg" alt="Wedding Aerial">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="landscape" data-aos="zoom-in"
+                    data-aos-delay="300">
+                    <img src="assets/images/21611.jpg" alt="Mountain">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="realestate" data-aos="zoom-in"
+                    data-aos-delay="400">
+                    <img src="assets/images/2150799725.jpg" alt="Luxury Home">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="construction" data-aos="zoom-in"
+                    data-aos-delay="500">
+                    <img src="assets/images/30150.jpg" alt="Site Progress">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="events" data-aos="zoom-in"
+                    data-aos-delay="600">
+                    <img src="assets/images/4070.jpg" alt="Festival">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="landscape" data-aos="zoom-in"
+                    data-aos-delay="700">
+                    <img src="assets/images/4862.jpg" alt="Coastline">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="realestate" data-aos="zoom-in"
+                    data-aos-delay="800">
+                    <img src="assets/images/1983.jpg" alt="Resort">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment Section -->
+    <section id="equipment" style="background: #f8f9fa; padding: 80px 0;">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-aos="fade-up">Our Sky Fleet</h2>
+                <p data-aos="fade-up" data-aos-delay="200">Professional Drone Equipment</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="equipment-card text-center">
+                        <i class="fas fa-plane fa-3x mb-3"></i>
+                        <h5>DJI Inspire 3</h5>
+                        <p>8K Cinema Camera<br>Full-frame sensor<br>360° obstacle avoidance</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="equipment-card text-center">
+                        <i class="fas fa-helicopter fa-3x mb-3"></i>
+                        <h5>DJI Matrice 350</h5>
+                        <p>Enterprise grade<br>55 min flight time<br>Dual operator capable</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="equipment-card text-center">
+                        <i class="fas fa-camera fa-3x mb-3"></i>
+                        <h5>Zenmuse X9</h5>
+                        <p>6K Gimbal Camera<br>Dynamic Track 5.0<br>ProRes & Apple ProRAW</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="equipment-card text-center">
+                        <i class="fas fa-shield-alt fa-3x mb-3"></i>
+                        <h5>Safety Systems</h5>
+                        <p>FAA Compliance<br>Liability Insurance<br>Redundancy Systems</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-aos="fade-up">Drone Client Reviews</h2>
+                <p data-aos="fade-up" data-aos-delay="200">What Our Clients Say About Our Aerial Work</p>
+            </div>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="testimonial-card">
+                                    <img src="assets/images/photo-1507003211169-0a1dd7228f2d.jpeg"
+                                        alt="Client">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="mb-3">"The aerial footage of our new development completely transformed
+                                        our marketing. The drone team was professional, punctual, and the results
+                                        exceeded expectations. Highly recommended!"</p>
+                                    <h5>Robert Kline</h5>
+                                    <small>Real Estate Developer</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="testimonial-card">
+                                    <img src="assets/images/photo-1494790108377-be9c29b29330.jpeg"
+                                        alt="Client">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="mb-3">"Our wedding aerial video was absolutely magical. The drone shots of
+                                        our venue and the aerial group photo are our most cherished memories. Worth
+                                        every penny!"</p>
+                                    <h5>Jessica & Mark</h5>
+                                    <small>Wedding Clients</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="testimonial-card">
+                                    <img src="assets/images/photo-1544005313-94ddf0286df2.jpeg"
+                                        alt="Client">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="mb-3">"The construction progress flyovers saved us countless hours of site
+                                        inspections. The detailed aerial maps and videos provided perfect documentation
+                                        for our stakeholders."</p>
+                                    <h5>David Chen</h5>
+                                    <small>Construction Manager</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-aos="fade-up">Request Aerial Services</h2>
+                <p data-aos="fade-up" data-aos-delay="200">Let's Capture Your Vision From Above</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mb-4 mb-lg-0" data-aos="fade-right">
+                    <div class="contact-form">
+                        <h3 class="mb-4">Drone Project Inquiry</h3>
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <select class="form-control" required>
+                                    <option value="">Select Service Type</option>
+                                    <option>Real Estate Aerial</option>
+                                    <option>Construction Documentation</option>
+                                    <option>Event Coverage</option>
+                                    <option>Landscape Photography</option>
+                                    <option>Commercial Video</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Location/Address">
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="6" placeholder="Project Details & Requirements"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary-custom w-100">Get Quote</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-left" data-aos-delay="200">
+                    <div class="contact-info">
+                        <h3 class="mb-4">Drone Division Contact</h3>
+
+                        <div class="info-item">
+                            <div class="icon-box">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h5>Service Area</h5>
+                                <p>NY, NJ, CT Tri-State Area<br>Available for Travel Nationwide</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="icon-box">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h5>Drone Hotline</h5>
+                                <p>+1 (555) 789-DRONE (3766)</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="icon-box">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h5>Email</h5>
+                                <p>drone@luxelens.com</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="icon-box">
+                                <i class="fas fa-award"></i>
+                           </div>
+                            <div>
+                                <h5>Certifications</h5>
+                                <p>FAA Part 107 Licensed<br>Fully Insured & Bonded</p>
+                            </div>
+                        </div>
+
+                        <div class="social-links mt-4">
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4" data-aos="fade-up">
+                    <h4 class="footer-logo mb-3">LUXELENS <span>STUDIO</span></h4>
+                    <p class="footer-text">
+                        Professional photography studio capturing life's most precious moments.
+                        Creating timeless memories through the lens.
+                    </p>
+                    <div class="social-links mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="X (Twitter)">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M18.244 2H21.552L14.291 10.29L22.824 22H16.112L10.822 14.622L4.758 22H1.448L9.206 13.243L1 2H7.888L12.662 8.735L18.244 2ZM17.096 20H18.93L6.892 4H4.928L17.096 20Z" />
+                            </svg>
+                        </a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <h5 class="footer-title">Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="wedding-photography.html">Wedding</a></li>
+                        <li><a href="portrait-photography.html">Portrait</a></li>
+                        <li><a href="fashion-photography.html">Fashion</a></li>
+                        <li><a href="event-photogrphy.html">Events</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <h5 class="footer-title">Newsletter</h5>
+                    <p class="footer-text">Get studio updates, offers & photography tips.</p>
+                    <div class="newsletter">
+                        <input type="email" id="subscribe-email" required="" placeholder="Enter your email">
+                        <button id="subscribe">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2026 | <a target="_blank" href="https://www.mobanwang.com/" title="网站模板" style="color:#94a3b8;">网站模板</a></p>
+                <div class="copyright-links">
+                    <a href="terms-condition.html">Terms & Conditions</a>
+                    <span class="divider">|</span>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <span class="divider">|</span>
+                    <a href="FAQs.html">FAQs</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
