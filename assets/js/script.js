@@ -1,21 +1,36 @@
 
-// Initialize AOS
-AOS.init({
-    duration: 1000,
-    once: true,
-    offset: 100
-});
-
 // Loading Screen
-window.addEventListener('load', function () {
+// Do not wait for every external font or icon request to finish. Some networks
+// can leave those requests pending and otherwise keep the page covered forever.
+function hidePageLoader() {
+    const loader = document.getElementById('loader');
+    if (!loader || loader.classList.contains('hidden')) return;
 
-    setTimeout(function () {
-        const loader = document.getElementById('loader');
-        if (loader) {
-            loader.classList.add('hidden');
-        }
-    }, 1000);
-});
+    loader.classList.add('hidden');
+    window.setTimeout(function () {
+        loader.remove();
+    }, 600);
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function () {
+        window.setTimeout(hidePageLoader, 250);
+    }, { once: true });
+} else {
+    window.setTimeout(hidePageLoader, 250);
+}
+
+// Final JavaScript failsafe, independent of the document load event.
+window.setTimeout(hidePageLoader, 3000);
+
+// Initialize AOS only when the optional library is available.
+if (window.AOS && typeof window.AOS.init === 'function') {
+    window.AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100
+    });
+}
 
 // Hero Slider
 let currentSlide = 0;

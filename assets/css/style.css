@@ -767,10 +767,12 @@ section {
   justify-content: center;
   z-index: 99999;
   transition: opacity 0.5s;
+  animation: loaderFailsafe 0.01s 4s forwards;
 }
 
 .loader.hidden {
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
 }
 
@@ -781,6 +783,14 @@ section {
   border-top-color: var(--secondary);
   border-radius: 50%;
   animation: 1s linear infinite spin;
+}
+
+@keyframes loaderFailsafe {
+  to {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 
 @keyframes spin {
