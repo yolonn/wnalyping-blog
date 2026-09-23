@@ -146,17 +146,25 @@ html {
 
 .hero-slide:first-child {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../images/photo-1606216794074-735e91aa2c92.jpeg");
+    url("../images/personal-tree-walk.jpg");
 }
 
 .hero-slide:nth-child(2) {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../images/photo-1519741497674-611481863552.jpeg");
+    url("../images/personal-tree-sky.jpg");
 }
 
 .hero-slide:nth-child(3) {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../images/photo-1542038784456-1ea8e935640e.jpeg");
+    url("../images/personal-old-tree.jpg");
+}
+
+.hero-slide:first-child,
+.hero-slide:nth-child(2),
+.hero-slide:nth-child(3) {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-content {
@@ -4077,7 +4085,7 @@ body.article-modal-open {
     color: #fff;
     background:
         linear-gradient(90deg, rgba(4, 4, 4, 0.92) 0%, rgba(7, 7, 7, 0.66) 48%, rgba(8, 8, 8, 0.18) 100%),
-        url("../images/dronephoto.png") center / cover no-repeat;
+        url("../images/personal-tree-walk.jpg") center / cover no-repeat;
 }
 
 .image-notes-hero-content {
