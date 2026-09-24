@@ -3,117 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WNA LYPING 的个人影像手记，记录城市、山海与移动中的观看。">
+    <meta name="description" content="WNA LYPING 的个人影像手记，记录树木、花、城市边缘与普通日常。">
     <title>影像手记｜WNA LYPING</title>
     <link rel="icon" href="assets/images/photo.png">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="assets/css/aos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link href="assets/css/style.css?v=20260923-personal-photos" rel="stylesheet">
+    <link href="assets/css/style.css?v=20260924-redesign" rel="stylesheet">
 </head>
-<body class="visual-journal-page">
+<body class="visual-journal-page journal-redesign">
     <div class="loader" id="loader"><div class="spinner"></div></div>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top personal-nav">
         <div class="container">
             <a class="navbar-brand" href="index.html">WNA LYPING</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="展开导航"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">首页</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html#about">关于我</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#services">创作方向</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html#portfolio">作品集</a></li>
                     <li class="nav-item"><a class="nav-link" href="blog.html">博客</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="#home">影像手记</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#top">影像手记</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html#contact">联系我</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <main>
-        <section id="home" class="image-notes-hero">
-            <div class="container image-notes-hero-content">
-                <span class="visual-kicker" data-aos="fade-up">VISUAL JOURNAL · 01</span>
-                <h1 data-aos="fade-up" data-aos-delay="120">沿着光，<br>记录经过的地方。</h1>
-                <p data-aos="fade-up" data-aos-delay="240">这不是一项商业服务，而是一组关于树木、花、城市边缘与日常光线的个人影像记录。</p>
-                <div class="hero-actions" data-aos="fade-up" data-aos-delay="360">
-                    <a class="btn btn-primary-custom" href="#stories">查看影像</a>
-                    <a class="hero-text-link" href="index.html">返回首页 <span>↗</span></a>
+    <main id="top">
+        <header class="journal-cover">
+            <div class="container journal-cover-grid">
+                <div class="journal-cover-copy" data-aos="fade-up">
+                    <div class="journal-issue"><span>VISUAL JOURNAL</span><strong>01</strong></div>
+                    <h1>把光线，<br>收进一页。</h1>
+                    <p>一组关于树木、花、行走和城市边缘的个人影像。不是风景清单，而是我如何经过一个地方。</p>
+                    <div class="journal-cover-actions"><a href="#chapters">开始翻阅 ↓</a><a href="index.html#portfolio">返回作品集 ↗</a></div>
+                    <div class="journal-cover-meta"><span>HANGZHOU / CHINA</span><span>2026 · VOL. 01</span></div>
                 </div>
-                <div class="visual-hero-note" data-aos="fade-left" data-aos-delay="500">
-                    <span>FIELD NOTE</span><p>镜头留下的，不只是景物，也是一段时间里的观看方式。</p>
+                <div class="journal-cover-visual" data-aos="fade-left">
+                    <figure class="journal-cover-main"><img src="assets/images/personal-tree-walk.jpg" alt="林荫路上经过树木的行人"></figure>
+                    <figure class="journal-cover-inset"><img src="assets/images/personal-sunset-reeds.jpg" alt="夕阳穿过芦苇"><figcaption>光落下之前</figcaption></figure>
+                    <span class="journal-cover-caption">WALKING / LOOKING / KEEPING</span>
                 </div>
+            </div>
+        </header>
+
+        <section class="journal-index" id="chapters" aria-label="影像手记章节">
+            <div class="container journal-index-grid">
+                <a href="#light"><span>01</span><div><small>CHAPTER</small><strong>光的停留</strong></div><i>↘</i></a>
+                <a href="#walking"><span>02</span><div><small>CHAPTER</small><strong>行走的尺度</strong></div><i>↘</i></a>
+                <a href="#editing"><span>03</span><div><small>CHAPTER</small><strong>重新编排</strong></div><i>↘</i></a>
             </div>
         </section>
 
-        <section class="visual-intro">
+        <section class="journal-feature" id="light">
+            <div class="container journal-feature-grid">
+                <div class="journal-feature-copy" data-aos="fade-right">
+                    <span class="journal-section-number">01 / LIGHT</span>
+                    <h2>先看光，<br>再决定拍什么。</h2>
+                    <p>我喜欢那些没有明确主角的时刻：一束夕阳穿过芦苇，一片荷叶把花托到亮处，树干的纹理在下午突然变得清楚。</p>
+                    <blockquote>画面不是被找到的，<br>它是在停留中慢慢出现。</blockquote>
+                </div>
+                <figure class="journal-feature-image" data-aos="fade-left"><img src="assets/images/personal-collage-lotus.jpg" alt="静水与光主题拼贴"><figcaption><span>STILL WATER, GRAZING LIGHT</span><b>静水与光</b></figcaption></figure>
+            </div>
+        </section>
+
+        <section class="journal-gallery" id="walking">
             <div class="container">
-                <div class="row align-items-end">
-                    <div class="col-lg-4" data-aos="fade-up">
-                        <span class="section-kicker">WHY THIS PAGE</span><h2>为什么保留<br>这一页</h2>
-                    </div>
-                    <div class="col-lg-7 offset-lg-1" data-aos="fade-up" data-aos-delay="120">
-                        <p class="visual-intro-lead">我更愿意把摄影看成一种观看练习，而不是一项需要被包装的服务。</p>
-                        <p>一朵荷花、树干上的光、行走中的人和冬天的屋檐，都可能成为一次记录的起点。这里收集的不是套餐和报价，而是我对时间、光线与日常细节的个人观察。</p>
-                    </div>
+                <div class="journal-section-heading" data-aos="fade-up"><div><span class="journal-section-number">02 / WALKING</span><h2>六张照片，<br>组成一段路。</h2></div><p>远景交代地点，中景留下人与空间的关系，细节保存当时的触感。单张追求完整，一组照片需要呼吸。</p></div>
+                <div class="journal-masonry">
+                    <figure class="journal-shot journal-shot-tall" data-aos="fade-up"><img src="assets/images/personal-tree-up.jpg" alt="向上仰望树冠"><figcaption><span>01</span><strong>向上看</strong><small>树冠把天空切成不规则的蓝。</small></figcaption></figure>
+                    <figure class="journal-shot journal-shot-wide" data-aos="fade-up" data-aos-delay="80"><img src="assets/images/personal-west-lake.jpg" alt="西溪国家湿地公园入口"><figcaption><span>02</span><strong>抵达西溪</strong><small>地点从墙上的字开始。</small></figcaption></figure>
+                    <figure class="journal-shot journal-shot-square" data-aos="fade-up" data-aos-delay="120"><img src="assets/images/personal-lotus-open.jpg" alt="盛开的荷花"><figcaption><span>03</span><strong>正午</strong><small>明亮不是没有层次。</small></figcaption></figure>
+                    <figure class="journal-shot journal-shot-landscape" data-aos="fade-up"><img src="assets/images/personal-old-tree.jpg" alt="湖边苍老树木"><figcaption><span>04</span><strong>树的身体</strong><small>时间藏在弯曲与苔藓里。</small></figcaption></figure>
+                    <figure class="journal-shot journal-shot-dark" data-aos="fade-up" data-aos-delay="100"><img src="assets/images/personal-sunset-reeds.jpg" alt="夕阳下的芦苇"><figcaption><span>05</span><strong>最后一束光</strong><small>按下快门之前，先等风停一秒。</small></figcaption></figure>
+                    <figure class="journal-shot journal-shot-roof" data-aos="fade-up" data-aos-delay="160"><img src="assets/images/personal-snow-roof.jpg" alt="雪中的传统屋檐"><figcaption><span>06</span><strong>冬天的边缘</strong><small>留白让屋檐继续向画外生长。</small></figcaption></figure>
                 </div>
             </div>
         </section>
 
-        <section id="stories" class="visual-stories">
+        <section class="journal-editing" id="editing">
+            <div class="container journal-editing-grid">
+                <figure class="editing-art" data-aos="fade-right"><img src="assets/images/personal-collage-train.jpg" alt="抵达之间主题列车拼贴"><span>BEFORE / AFTER / BETWEEN</span></figure>
+                <div class="editing-copy" data-aos="fade-left">
+                    <span class="journal-section-number">03 / EDITING</span>
+                    <h2>拍摄之后，<br>重新安排观看顺序。</h2>
+                    <p>我会删去重复的画面，寻找一组图片内部的速度。有时也会加入纸张、网点和一条突兀的红线，让照片里原本微弱的关系更清楚。</p>
+                    <div class="editing-steps">
+                        <article><b>01</b><div><strong>选择</strong><span>留下真正改变叙事的画面</span></div></article>
+                        <article><b>02</b><div><strong>排序</strong><span>用远近、明暗和方向建立节奏</span></div></article>
+                        <article><b>03</b><div><strong>书写</strong><span>补上照片无法独自说出的部分</span></div></article>
+                    </div>
+                    <a href="blog-detail.html?article=measured-by-trees">阅读《由树丈量》的创作过程 ↗</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="journal-closing">
             <div class="container">
-                <div class="section-title visual-section-title"><h2 data-aos="fade-up">三组观看</h2><p data-aos="fade-up" data-aos-delay="120">Three ways of seeing</p></div>
-                <div class="visual-story-grid">
-                    <article class="visual-story-card visual-story-wide" data-aos="fade-up">
-                        <img src="assets/images/personal-collage-train.jpg" alt="抵达之间，列车主题拼贴作品">
-                        <div class="visual-story-overlay"><span>01 · ARRIVAL</span><h3>抵达之间</h3><p>列车、站台与斜向的红线，把等待变成一段仍在移动的时间。</p></div>
-                    </article>
-                    <article class="visual-story-card" data-aos="fade-up" data-aos-delay="100">
-                        <img src="assets/images/personal-collage-lotus.jpg" alt="静水与光，荷花主题拼贴作品">
-                        <div class="visual-story-overlay"><span>02 · STILL WATER</span><h3>静水与光</h3><p>纸张的层次像远山，也让一朵荷花拥有更安静的空间。</p></div>
-                    </article>
-                    <article class="visual-story-card" data-aos="fade-up" data-aos-delay="180">
-                        <img src="assets/images/personal-collage-trees.jpg" alt="由树丈量，林间行走主题拼贴作品">
-                        <div class="visual-story-overlay"><span>03 · MEASURED</span><h3>由树丈量</h3><p>人在树木之间显得很小，路却因为行走拥有了尺度。</p></div>
-                    </article>
-                </div>
+                <span>FIELD NOTE · 2026</span>
+                <blockquote>不是为了证明去过哪里，<br>只是想记住当时怎样看见。</blockquote>
+                <div class="journal-closing-links"><a href="blog.html">继续读博客 ↗</a><a href="index.html#contact">和我聊聊 ↗</a></div>
             </div>
         </section>
-
-        <section class="visual-process">
-            <div class="container"><div class="row align-items-start">
-                <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-right">
-                    <span class="section-kicker">THE PROCESS</span><h2>一次影像记录<br>如何发生</h2>
-                    <p>我不追求一次拍摄就得到“大片”。完整的记录往往从现场之外开始，也在回到电脑之后继续。</p>
-                </div>
-                <div class="col-lg-7 offset-lg-1"><div class="process-grid">
-                    <article data-aos="fade-up"><span>01</span><h3>观察</h3><p>先理解天气、地形与现场正在发生的事情。</p></article>
-                    <article data-aos="fade-up" data-aos-delay="80"><span>02</span><h3>靠近</h3><p>让镜头移动有理由，而不是单纯追求漂亮画面。</p></article>
-                    <article data-aos="fade-up" data-aos-delay="160"><span>03</span><h3>整理</h3><p>删去重复的画面，找到一组图像内部的节奏。</p></article>
-                    <article data-aos="fade-up" data-aos-delay="240"><span>04</span><h3>书写</h3><p>为影像补上一段现场之外的思考与记忆。</p></article>
-                </div></div>
-            </div></div>
-        </section>
-
-        <section class="visual-quote"><div class="container" data-aos="fade-up">
-            <span>FIELD NOTE · 2026</span><blockquote>“我更关心的不是看见了多少，而是哪些普通瞬间在回望时重新变得清楚。”</blockquote>
-        </div></section>
-
-        <section class="visual-next"><div class="container"><div class="visual-next-card" data-aos="zoom-in">
-            <span>NEXT STOP</span><h2>影像只是入口，<br>故事仍在继续。</h2>
-            <p>去作品集看看其他实践，或者在博客里阅读更完整的过程。</p>
-            <div class="hero-actions"><a class="btn btn-primary-custom" href="index.html#portfolio">浏览作品</a><a class="hero-text-link dark-link" href="blog.html">阅读博客 <span>↗</span></a></div>
-        </div></div></section>
     </main>
 
-    <footer class="footer"><div class="container">
-        <div class="visual-footer-row"><div><h4 class="footer-logo mb-3">WNA <span>LYPING</span></h4><p class="footer-text">关于技术、AI、设计与生活的个人作品集和长期博客。</p></div>
-        <div class="visual-footer-links"><a href="index.html">首页</a><a href="index.html#portfolio">作品集</a><a href="blog.html">博客</a><a href="index.html#contact">联系我</a></div></div>
-        <div class="copyright"><p>© 2026 WNA LYPING · Built with curiosity.</p></div>
-    </div></footer>
-    <div class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></div>
-    <script src="assets/js/bootstrap.bundle.min.js"></script><script src="assets/js/aos.js"></script><script src="assets/js/script.js?v=20260923-personal"></script>
+    <footer class="footer journal-footer"><div class="container"><div class="journal-footer-top"><h4>WNA <span>LYPING</span></h4><p>摄影不是终点，<br>是重新注意日常的方法。</p><div><a href="index.html">首页</a><a href="index.html#portfolio">作品集</a><a href="blog.html">博客</a><a href="index.html#contact">联系我</a></div></div><div class="copyright"><p>© 2026 WNA LYPING · Visual Journal 01.</p><a href="#top">回到封面 ↑</a></div></div></footer>
+    <button class="back-to-top" id="backToTop" type="button" aria-label="返回顶部"><i class="fas fa-arrow-up"></i></button>
+    <script src="assets/js/bootstrap.bundle.min.js"></script><script src="assets/js/aos.js"></script><script src="assets/js/script.js?v=20260924-redesign"></script>
 </body>
 </html>

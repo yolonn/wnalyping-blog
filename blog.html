@@ -9,7 +9,7 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="assets/css/aos.css" rel="stylesheet">
-    <link href="assets/css/style.css?v=20260924-blog" rel="stylesheet">
+    <link href="assets/css/style.css?v=20260924-redesign" rel="stylesheet">
 </head>
 <body class="personal-blog-page">
     <div class="loader" id="loader"><div class="spinner"></div></div>
@@ -69,10 +69,24 @@
                 <div class="blog-empty" id="blogEmpty" hidden><strong>没有找到相关文章</strong><p>换一个关键词，或者选择“全部”再看看。</p></div>
             </div>
         </section>
-        <section class="blog-personal-note">
-            <div class="container personal-note-grid">
-                <div><span class="editorial-label editorial-label-light">ABOUT THIS BLOG</span><h2>这是我的公开工作台。</h2></div>
-                <div><p>我把正在学习的知识、做过的实验和没有完全想明白的问题放在这里。文章会修改，观点也可能变化；留下过程，比假装一开始就知道答案更重要。</p><a href="index.html#about">认识我，也认识这个网站 ↗</a></div>
+        <section class="blog-personal-note" id="workbench">
+            <div class="container workbench-grid">
+                <div class="workbench-intro">
+                    <span class="editorial-label editorial-label-light">OPEN WORKBENCH</span>
+                    <h2>这里不是<br>文章仓库。</h2>
+                    <p>它更像一张公开的工作桌：放着刚写完的文字、仍在修改的实验，以及下一次准备追问的问题。</p>
+                    <a href="index.html#about">关于我和这个网站 ↗</a>
+                </div>
+                <div class="workbench-index">
+                    <span class="workbench-index-title">桌面上的三件事</span>
+                    <a href="blog-detail.html?article=website"><b>01</b><div><small>刚刚完成</small><strong>重做个人博客与文章系统</strong></div><i>↗</i></a>
+                    <a href="blog-detail.html?article=ai-workflow"><b>02</b><div><small>正在试验</small><strong>AI 辅助创作的稳定流程</strong></div><i>↗</i></a>
+                    <a href="drone-service.html"><b>03</b><div><small>持续收集</small><strong>光、树木与行走中的图像</strong></div><i>↗</i></a>
+                </div>
+                <figure class="workbench-visual">
+                    <img src="assets/images/personal-tree-up.jpg" alt="向上仰望枝干与天空">
+                    <figcaption><span>FIELD / 03</span><strong>有些答案，要先抬头才能看见。</strong></figcaption>
+                </figure>
             </div>
         </section>
     </main>
@@ -83,6 +97,7 @@
                 <div class="col-lg-3 col-md-6"><h5 class="footer-title">继续浏览</h5><ul class="footer-links"><li><a href="index.html">返回首页</a></li><li><a href="index.html#portfolio">作品集</a></li><li><a href="drone-service.html">影像手记</a></li></ul></div>
                 <div class="col-lg-4 col-md-6"><h5 class="footer-title">保持联系</h5><p class="footer-text">有想法、建议或想聊的主题，欢迎写信。</p><a class="footer-contact-link" href="mailto:hello@wnalyping.cn">hello@wnalyping.cn ↗</a></div>
             </div>
+            <div class="footer-manifesto" aria-hidden="true"><span>写作</span><i>·</i><span>图像</span><i>·</i><span>继续</span></div>
             <div class="copyright"><p>© 2026 WNA LYPING · Built with curiosity.</p><div class="copyright-links"><a href="terms-condition.html">服务条款</a><span class="divider">|</span><a href="privacy-policy.html">隐私政策</a><span class="divider">|</span><a href="FAQs.html">常见问题</a></div></div>
         </div>
     </footer>
