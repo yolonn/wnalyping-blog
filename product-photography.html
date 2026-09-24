@@ -62,7 +62,7 @@
                     <div class="product-type-card">
                         <div class="product-badge">热门推荐</div>
                         <div class="product-type-img">
-                            <img src="assets/images/product-位摄影师-with-camera-studio_23-2148970261.jpg"
+                            <img src="assets/images/product-photographer-with-camera-studio_23-2148970261.jpg"
                                 alt="E-commerce">
                         </div>
                         <div class="product-type-content">
@@ -245,7 +245,7 @@
 
             <div class="product-gallery-grid" data-aos="fade-up">
                 <div class="product-gallery-item">
-                    <img src="assets/images/product-位摄影师-with-camera-studio_23-2148970261.jpg"
+                    <img src="assets/images/product-photographer-with-camera-studio_23-2148970261.jpg"
                         alt="Headphones">
                     <div class="product-info-overlay">
                         <h6 class="mb-0">Premium Headphones</h6>
@@ -525,7 +525,7 @@
                     <span class="divider">|</span>
                     <a href="privacy-policy.html">隐私政策</a>
                     <span class="divider">|</span>
-                    <a href="常见问题.html">常见问题</a>
+                    <a href="FAQs.html">常见问题</a>
                 </div>
             </div>
         </div>
@@ -544,7 +544,7 @@
       
 
         // FAQ functionality
-        document.querySelector全部('.faq-question').forEach(item => {
+        document.querySelectorAll('.faq-question').forEach(item => {
             item.addEventListener('click', () => {
                 const answer = item.nextElementSibling;
                 answer.classList.toggle('open');
@@ -574,7 +574,7 @@
         });
 
         // Product gallery lightbox simulation
-        document.querySelector全部('.lightbox-control').forEach(control => {
+        document.querySelectorAll('.lightbox-control').forEach(control => {
             control.addEventListener('click', function (e) {
                 e.stopPropagation();
                 const img = this.parentElement.querySelector('img');
@@ -583,7 +583,7 @@
         });
 
         // Product type card hover effect with delay
-        document.querySelector全部('.product-type-card').forEach(card => {
+        document.querySelectorAll('.product-type-card').forEach(card => {
             card.addEventListener('mouseenter', function () {
                 this.style.transition = 'all 0.3s ease 0.1s';
             });
@@ -593,7 +593,7 @@
         });
 
         // View item animation
-        document.querySelector全部('.view-item').forEach(item => {
+        document.querySelectorAll('.view-item').forEach(item => {
             item.addEventListener('mouseenter', function () {
                 this.style.transform = 'translateY(-10px) scale(1.02)';
             });
@@ -603,7 +603,7 @@
         });
 
         // Bulk pricing table row highlight
-        document.querySelector全部('.pricing-table tbody tr').forEach(row => {
+        document.querySelectorAll('.pricing-table tbody tr').forEach(row => {
             row.addEventListener('mouseenter', function () {
                 this.style.backgroundColor = 'var(--light-color)';
             });

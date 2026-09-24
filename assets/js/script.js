@@ -53,6 +53,7 @@ if (slides) {
 // Navbar Scroll Effect
 window.addEventListener('scroll', function () {
     const navbar = document.querySelector('.navbar');
+    if (!navbar) return;
     if (window.scrollY > 50) {
         navbar.classList.add('scrolled');
     } else {
@@ -67,6 +68,8 @@ window.addEventListener('scroll', function () {
 function updateActiveMenu() {
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav-link');
+
+    if (!sections.length) return;
 
     let current = '';
 
@@ -172,7 +175,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (form) {
         form.addEventListener('submit', function (e) {
             e.preventDefault();
-            alert('Thank you for your message! We will get back to you soon.');
+            alert('消息已收到，谢谢你。我会尽快回复。');
             this.reset();
         });
     }
@@ -183,6 +186,7 @@ document.addEventListener('DOMContentLoaded', function () {
 const backToTop = document.getElementById('backToTop');
 
 window.addEventListener('scroll', function () {
+    if (!backToTop) return;
     if (window.scrollY > 300) {
         backToTop.classList.add('show');
     } else {
@@ -190,7 +194,7 @@ window.addEventListener('scroll', function () {
     }
 });
 
-backToTop.addEventListener('click', function () {
+backToTop?.addEventListener('click', function () {
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
@@ -218,7 +222,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Initialize active menu on load
 updateActiveMenu();
 
-document.getElementById("subscribe").addEventListener("click", function () {
+document.getElementById("subscribe")?.addEventListener("click", function () {
     const emailInput = document.getElementById("subscribe-email");
     const email = emailInput.value.trim();
 
@@ -226,19 +230,19 @@ document.getElementById("subscribe").addEventListener("click", function () {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (email === "") {
-        alert("Please enter your email address.");
+        alert("请输入你的邮箱地址。");
         emailInput.focus();
         return;
     }
 
     if (!emailPattern.test(email)) {
-        alert("Please enter a valid email address.");
+        alert("请输入有效的邮箱地址。");
         emailInput.focus();
         return;
     }
 
     // Success
-    alert("Thank you for subscribing!");
+    alert("订阅成功，谢谢关注！");
     emailInput.value = "";
 });
 

@@ -647,7 +647,7 @@
                     <span class="divider">|</span>
                     <a href="privacy-policy.html">隐私政策</a>
                     <span class="divider">|</span>
-                    <a href="常见问题.html">常见问题</a>
+                    <a href="FAQs.html">常见问题</a>
                 </div>
             </div>
         </div>
@@ -666,7 +666,7 @@
        
 
         // FAQ functionality
-        document.querySelector全部('.faq-question').forEach(item => {
+        document.querySelectorAll('.faq-question').forEach(item => {
             item.addEventListener('click', () => {
                 const answer = item.nextElementSibling;
                 answer.classList.toggle('open');
@@ -696,7 +696,7 @@
         });
 
         // Client logo hover effect
-        document.querySelector全部('.client-logo-container img').forEach(img => {
+        document.querySelectorAll('.client-logo-container img').forEach(img => {
             img.addEventListener('mouseenter', function () {
                 this.style.filter = 'grayscale(0%)';
                 this.style.opacity = '1';
@@ -711,7 +711,7 @@
 
         // ROI metrics animation
         function animateROIMetrics() {
-            const metrics = document.querySelector全部('.roi-metric h3');
+            const metrics = document.querySelectorAll('.roi-metric h3');
             const targets = [42, 3.2, 78, 65];
 
             metrics.forEach((metric, index) => {
@@ -758,7 +758,7 @@
         }
 
         // Budget range hover effect
-        document.querySelector全部('.budget-range').forEach(range => {
+        document.querySelectorAll('.budget-range').forEach(range => {
             range.addEventListener('mouseenter', function () {
                 this.style.transform = 'translateY(-10px)';
                 this.style.boxShadow = '0 15px 30px rgba(0,0,0,0.1)';

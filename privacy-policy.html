@@ -589,7 +589,7 @@
                     <span class="divider">|</span>
                     <a href="privacy-policy.html">隐私政策</a>
                     <span class="divider">|</span>
-                    <a href="常见问题.html">常见问题</a>
+                    <a href="FAQs.html">常见问题</a>
                 </div>
             </div>
         </div>
@@ -631,7 +631,7 @@
         });
 
         // Smooth scrolling for navigation links
-        document.querySelector全部('.privacy-nav-list a').forEach(link => {
+        document.querySelectorAll('.privacy-nav-list a').forEach(link => {
             link.addEventListener('click', function (e) {
                 e.preventDefault();
                 const targetId = this.getAttribute('href');
@@ -643,7 +643,7 @@
                 });
 
                 // Update active state
-                document.querySelector全部('.privacy-nav-list a').forEach(a => {
+                document.querySelectorAll('.privacy-nav-list a').forEach(a => {
                     a.classList.remove('active');
                 });
                 this.classList.add('active');
@@ -651,8 +651,8 @@
         });
 
         // Highlight current section while scrolling
-        const sections = document.querySelector全部('.privacy-section');
-        const navLinksprivacy = document.querySelector全部('.privacy-nav-list a');
+        const sections = document.querySelectorAll('.privacy-section');
+        const navLinksprivacy = document.querySelectorAll('.privacy-nav-list a');
 
         window.addEventListener('scroll', function () {
             let current = '';

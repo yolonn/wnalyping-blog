@@ -522,7 +522,7 @@
                     <span class="divider">|</span>
                     <a href="privacy-policy.html">隐私政策</a>
                     <span class="divider">|</span>
-                    <a href="常见问题.html">常见问题</a>
+                    <a href="FAQs.html">常见问题</a>
                 </div>
             </div>
         </div>
@@ -541,7 +541,7 @@
 
 
         // FAQ functionality
-        document.querySelector全部('.faq-question').forEach(item => {
+        document.querySelectorAll('.faq-question').forEach(item => {
             item.addEventListener('click', () => {
                 const answer = item.nextElementSibling;
                 answer.classList.toggle('open');
@@ -571,8 +571,8 @@
         });
 
         // Lookbook slider
-        const slideslookbook = document.querySelector全部('.lookbook-slide');
-        const dots = document.querySelector全部('.lookbook-dot');
+        const slideslookbook = document.querySelectorAll('.lookbook-slide');
+        const dots = document.querySelectorAll('.lookbook-dot');
         let currentSlidelookbook = 0;
 
         function showSlide(n) {
@@ -609,7 +609,7 @@
 
 
         // Client logo hover effect
-        document.querySelector全部('.client-logo img').forEach(img => {
+        document.querySelectorAll('.client-logo img').forEach(img => {
             img.addEventListener('mouseenter', () => {
                 img.style.filter = 'grayscale(0%)';
                 img.style.opacity = '1';

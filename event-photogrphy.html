@@ -635,7 +635,7 @@
                     <span class="divider">|</span>
                     <a href="privacy-policy.html">隐私政策</a>
                     <span class="divider">|</span>
-                    <a href="常见问题.html">常见问题</a>
+                    <a href="FAQs.html">常见问题</a>
                 </div>
             </div>
         </div>
@@ -653,7 +653,7 @@
     <script>
        
         // FAQ functionality
-        document.querySelector全部('.faq-question').forEach(item => {
+        document.querySelectorAll('.faq-question').forEach(item => {
             item.addEventListener('click', () => {
                 const answer = item.nextElementSibling;
                 answer.classList.toggle('open');
@@ -683,7 +683,7 @@
         });
 
         // Equipment icons animation
-        document.querySelector全部('.equipment-item').forEach(item => {
+        document.querySelectorAll('.equipment-item').forEach(item => {
             item.addEventListener('mouseenter', function () {
                 this.style.transform = 'translateY(-10px)';
                 this.style.boxShadow = '0 15px 30px rgba(0,0,0,0.1)';
@@ -717,7 +717,7 @@
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    const counts = document.querySelector全部('.client-count h3');
+                    const counts = document.querySelectorAll('.client-count h3');
                     counts.forEach(count => {
                         const text = count.textContent;
                         const target = parseInt(text);

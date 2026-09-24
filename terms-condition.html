@@ -384,7 +384,7 @@
                     <span class="divider">|</span>
                     <a href="privacy-policy.html">隐私政策</a>
                     <span class="divider">|</span>
-                    <a href="常见问题.html">常见问题</a>
+                    <a href="FAQs.html">常见问题</a>
                 </div>
             </div>
         </div>
@@ -425,7 +425,7 @@
         });
 
         // Smooth scrolling for navigation links
-        document.querySelector全部('.terms-nav-list a').forEach(link => {
+        document.querySelectorAll('.terms-nav-list a').forEach(link => {
             link.addEventListener('click', function(e) {
                 e.preventDefault();
                 const targetId = this.getAttribute('href');
@@ -437,7 +437,7 @@
                 });
                 
                 // Update active state
-                document.querySelector全部('.terms-nav-list a').forEach(a => {
+                document.querySelectorAll('.terms-nav-list a').forEach(a => {
                     a.classList.remove('active');
                 });
                 this.classList.add('active');
@@ -445,8 +445,8 @@
         });
 
         // Highlight current section while scrolling
-        const sections = document.querySelector全部('.terms-section');
-        const navLinksterms = document.querySelector全部('.terms-nav-list a');
+        const sections = document.querySelectorAll('.terms-section');
+        const navLinksterms = document.querySelectorAll('.terms-nav-list a');
 
         window.addEventListener('scroll', function() {
             let current = '';
@@ -470,7 +470,7 @@
 
         // Auto-expand important notes on print
         window.addEventListener('beforeprint', function() {
-            document.querySelector全部('.important-note').forEach(note => {
+            document.querySelectorAll('.important-note').forEach(note => {
                 note.style.backgroundColor = '#fff8f8';
                 note.style.border = '2px solid #e74c3c';
             });

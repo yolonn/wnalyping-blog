@@ -507,7 +507,7 @@
                     <span class="divider">|</span>
                     <a href="privacy-policy.html">隐私政策</a>
                     <span class="divider">|</span>
-                    <a href="常见问题.html">常见问题</a>
+                    <a href="FAQs.html">常见问题</a>
                 </div>
             </div>
         </div>
@@ -532,13 +532,13 @@
         });
         
         // FAQ Toggle Functionality
-        document.querySelector全部('.faq-question').forEach(question => {
+        document.querySelectorAll('.faq-question').forEach(question => {
             question.addEventListener('click', function() {
                 const answer = this.nextElementSibling;
                 const toggle = this.querySelector('.faq-toggle');
                 
                 // Close all other 常见问题
-                document.querySelector全部('.faq-answer.active').forEach(activeAnswer => {
+                document.querySelectorAll('.faq-answer.active').forEach(activeAnswer => {
                     if (activeAnswer !== answer) {
                         activeAnswer.classList.remove('active');
                         activeAnswer.previousElementSibling.classList.remove('active');
@@ -564,16 +564,16 @@
         });
         
         // FAQ Category Filtering
-        document.querySelector全部('.faq-category-btn').forEach(button => {
+        document.querySelectorAll('.faq-category-btn').forEach(button => {
             button.addEventListener('click', function() {
                 // Update active button
-                document.querySelector全部('.faq-category-btn').forEach(btn => {
+                document.querySelectorAll('.faq-category-btn').forEach(btn => {
                     btn.classList.remove('active');
                 });
                 this.classList.add('active');
                 
                 const category = this.getAttribute('data-category');
-                const allFaqs = document.querySelector全部('.faq-item');
+                const allFaqs = document.querySelectorAll('.faq-item');
                 
                 if (category === 'all') {
                     // Show all 常见问题
@@ -612,22 +612,22 @@
             
             if (searchTerm === '') {
                 // Reset to show all
-                document.querySelector全部('.faq-item').forEach(faq => {
+                document.querySelectorAll('.faq-item').forEach(faq => {
                     faq.style.display = 'block';
                 });
-                document.querySelector全部('.faq-category-title').forEach(title => {
+                document.querySelectorAll('.faq-category-title').forEach(title => {
                     title.style.display = 'block';
                 });
                 return;
             }
             
             // Hide all category titles
-            document.querySelector全部('.faq-category-title').forEach(title => {
+            document.querySelectorAll('.faq-category-title').forEach(title => {
                 title.style.display = 'none';
             });
             
             // Search through 常见问题
-            document.querySelector全部('.faq-item').forEach(faq => {
+            document.querySelectorAll('.faq-item').forEach(faq => {
                 const question = faq.querySelector('.faq-question span:first-child').textContent.toLowerCase();
                 const answer = faq.querySelector('.faq-answer').textContent.toLowerCase();
                 
