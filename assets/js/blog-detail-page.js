@@ -6,7 +6,7 @@
     const post = posts[index] || posts[0];
     if (!post) return;
 
-    document.title = `${post.title}｜WNA LYPING`;
+    document.title = `${post.title}｜WNALYPING`;
     const setText = (id, value) => {
         const element = document.getElementById(id);
         if (element) element.textContent = value;
